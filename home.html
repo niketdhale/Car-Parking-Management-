@@ -1,0 +1,107 @@
+<html>
+<head>
+<title>Home Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style type="text/css">
+	body{
+			background-image: url("images/2.jpg");
+			background-size: cover;	
+			color: white;
+		}
+		.form-container{
+				
+				color: black;
+				font-size: 20px;
+				font-style: bold;
+				margin-top: 10%;
+				border: 0px solid black;
+				padding: 50px 60px;
+				-webkit-box-shadow: -1px 2px 30px 5px rgba(0,0,0,0.75);
+			-moz-box-shadow: -1px 2px 30px 5px rgba(0,0,0,0.75);
+			box-shadow: -1px 2px 30px 5px rgba(0,0,0,0.75);
+			background-color: #f2f2f2;
+
+		}
+		.form-container h5 {
+			text-align: center;
+		}
+		.form-container a{
+			color: #343a40;
+		}
+		.col-md-4{
+			margin-top: 4%;
+		}
+ </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+ 	<div class="container-fluid">
+ 		<div class="navbar-header">
+ 			<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#myNavbar">
+ 				<span class="icon-bar"></span>
+ 				<span class="icon-bar"></span>
+ 				<span class="icon-bar"></span>
+ 			</button>
+ 			<a href="home.html" class="navbar-brand"></a>
+ 		</div>
+
+ 		<ul class="nav navbar-nav"> 
+ 			<li ><a href="home.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+ 		</ul>
+ 		<ul class="nav navbar-nav navbar-right">
+      <li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+    </ul>
+ 	</div>
+ </nav>
+
+ <center><h1>WELCOME TO THE PARKING SOLUTIONS</h1></center>
+
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-7">
+			<div class="col-md-1"></div>
+			<div class="col-md-7">
+				<form action="home.php" method="post" class="form-container"> 
+			 <div class="form-group">
+			 	<label>Name : </label>
+			 	<input type="text" name="name" placeholder="Enter Name" class="form-control" required="Enter the Correct Details">
+			 </div>
+			 <div class="form-group">
+			 	<label>Date : </label>
+			 	<input type="date" name="date" placeholder="Enter Date" class="form-control" required="Enter the Correct Details">
+			 </div>
+			  <div class="form-group">
+			  	<label>Start Time :</label>
+			  	<input type="Time" name="start_time" class="form-control" required="Enter the Correct Details">
+			  </div>
+			  <div class="form-group">
+			  	<label>End Time : </label>
+			  	<input type="time" name="end_time" class="form-control" required="Enter the Correct Details"d>
+			  </div>
+			  <div class="form-group">
+			  	<label>Vehical No. : </label>
+			  	<input type="text" name="vehical" class="form-control" placeholder="Enter Vehical No." required="Enter the Correct Details">
+			  </div>
+			  <button type="submit" class="btn btn-default btn-block" name="sub" data-toggle="modal" data-target="#mymodal">Submit</button>
+			</form>
+			</div>
+			<div class="col-md-1"></div>
+		</div>
+		<div class="col-md-4">
+			<h2><b>To Park Vehical, Submit the Form</b></h2>
+			<h3><b>Rules : </b></h3>
+			<h4>Enter the Correct Name.</h4>
+			<h4>You can Enter Future Date.</h4>
+			<h4>Enter the <b>Approx.</b> Time.</h4>
+			<h4>Enter <b>Correct</b> and <b>Valid</b> Vehical No.</h4>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
